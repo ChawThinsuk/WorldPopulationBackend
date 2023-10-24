@@ -48,7 +48,7 @@ router.post("/get-by-year", async (req, res) => {
   let results = [];
   let worldPopulation = []
   let year = 1950;
-    for (year;year<=2021;year++) {
+    for (year;year<=1950;year++) {
     if (req.body.continent && req.body.continent?.length > 0) {
       worldPopulation = await collection
       .find(
